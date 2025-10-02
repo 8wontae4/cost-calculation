@@ -277,7 +277,7 @@ def calculate_costs(production_period_months, target_glab_sales, monthly_glab_ca
 
     # 월간/일간 생산량
     monthly_optical_modules = total_optical_modules / production_period_months
-    daily_optical_modules = monthly_optical_modules / 30
+    daily_optical_modules = monthly_optical_modules / 20  # 월 평균 근무일수 20일
 
     # 생산 가능성 분석
     required_glab_per_month = target_glab_sales / production_period_months
